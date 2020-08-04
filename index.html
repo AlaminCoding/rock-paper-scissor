@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="intro mt-5" id="intro">
+      <h2>Welcome<br />Rock Paper Scissor Game</h2>
+      <img src="img/game.jpg" alt="Games Image" />
+      <div class="loading">
+        <div class="inner-loading" id="inner"></div>
+      </div>
+    </section>
+    <section class="main" id="main">
+      <h1>Play</h1>
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-2 player">
+          <h4 class="mb-5">You</h4>
+          <p id="win-count">You win <span id="you-win-count">0</span> times</p>
+          <div class="img-box">
+            <img src="img/rockleft.png" alt="Initial Hand" id="init-you-rock" />
+            <img src="img/rockleft.png" alt="" class="you rock" />
+            <img src="img/paperleft.png" alt="" class="you paper" />
+            <img src="img/sessorleft.png" alt="" class="you sessor" />
+          </div>
+        </div>
+        <div class="col-md-2 Computer">
+          <h4 class="mb-5">Computer</h4>
+          <p id="win-count">
+            Computer win <span id="pc-win-count">0</span> times
+          </p>
+          <div class="img-box">
+            <img src="img/rockright.png" alt="Initial Hand" id="init-pc-rock" />
+            <img src="img/rockright.png" alt="" class="pc rock" />
+            <img src="img/paperright.png" alt="" class="pc paper" />
+            <img src="img/sissorright.png" alt="" class="pc sessor" />
+          </div>
+        </div>
+      </div>
+      <button id="play" class="btn btn-outline-danger mt-5">Play</button>
+      <button id="reset" class="btn btn-outline-danger mt-5">Reset</button>
+    </section>
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="game.js"></script>
+  </body>
+</html>
